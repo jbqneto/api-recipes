@@ -1,0 +1,12 @@
+version: '3.0.6'
+
+services:
+  mariadb:
+    image: mariadb:10.10
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_pwd
+      - MYSQL_PASSWORD=rcp_db_pwd
+      - MYSQL_USER=user
+      - MYSQL_DATABASE=recipes_db
